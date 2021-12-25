@@ -7,6 +7,8 @@ private: // личное
 	int day;
 
 public: // публичное
+	Date();
+	Date(int year);
 	Date(int year, int month, int day);
 
 	int getYear() { return year; }	// get-метод
