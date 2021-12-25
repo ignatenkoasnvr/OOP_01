@@ -5,20 +5,20 @@ using namespace std;
 
 void Date::input()
 {
-	cout << "Enter year";
+	cout << "Enter year: ";
 	cin >> year;
 
-	cout << "Enter month";
+	cout << "Enter month: ";
 	cin >> month;
 
-	cout << "Enter day";
+	cout << "Enter day: ";
 	cin >> day;
 }
 
 void Date::print()
 {
 	cout << setfill('0') << setw(4) << year << '-'
-		  << setw(2) << month
+		  << setw(2) << month << '-'
 		  << setw(2) << day;
 
 }
