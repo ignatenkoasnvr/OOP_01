@@ -23,6 +23,6 @@ public: // публичное
 	void input();
 	void print();
 
-
+	~Date() {};
 };
 
