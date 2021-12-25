@@ -3,7 +3,7 @@
 #include <iomanip>
 using namespace std;
 
-void Date::init(int year, int month, int day)
+Date::Date (int year, int month, int day)
 {
 	this->year = year;
 	this->month = month;

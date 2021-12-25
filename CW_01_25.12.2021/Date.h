@@ -7,7 +7,7 @@ private: // личное
 	int day;
 
 public: // публичное
-	void init(int year, int month, int day);
+	Date(int year, int month, int day);
 
 	int getYear() { return year; }	// get-метод
 	void setYear(int year){this->year = year;}
