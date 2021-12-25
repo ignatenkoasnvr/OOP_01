@@ -10,5 +10,8 @@ int main()
 	//today.input();
 	today.print();
 
+	today.setYear(2022);
+	today.print();
+
 	return 0;
 }
