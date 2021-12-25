@@ -7,6 +7,8 @@ private: // личное
 	int day;
 
 public: // публичное
+	void init(int year, int month, int day);
+
 	void input();
 	void print();
 

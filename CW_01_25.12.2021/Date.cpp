@@ -3,6 +3,13 @@
 #include <iomanip>
 using namespace std;
 
+void Date::init(int year, int month, int day)
+{
+	this->year = year;
+	this->month = month;
+	this->day = day;
+}
+
 void Date::input()
 {
 	cout << "Enter year: ";
