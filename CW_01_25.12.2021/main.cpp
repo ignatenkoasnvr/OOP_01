@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	//Date zero;
+	Date zero;
 	Date today    { 2021, 12, 30 };
 	Date tomorroy { 2021, 12, 31 };
 	Date yestoday = { 2021, 12, 29 };
