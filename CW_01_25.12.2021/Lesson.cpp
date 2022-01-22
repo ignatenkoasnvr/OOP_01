@@ -2,11 +2,11 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
-Lesson::Lesson(Date date, char topic[], char group[])
+Lesson::Lesson(Date date, const char topic[], const char group[])
 {
 	this->date = date;
-	this->topic[] = topic[];
-	this->group[] = group[];
+	strcpy_s (this->topic, SIZE, topic);
+	strcpy_s (this->group, SIZE, group);
 }
 //Lesson::Lesson(char topic[], char group[])
 //{
@@ -27,8 +27,9 @@ Lesson::Lesson(Date date, char topic[], char group[])
 //}
 void Lesson::print()
 {
-	cout << "Date: " << endl;
+	cout << "Date: ";
 	date.print();
+	cout << endl;
 	cout << "Topic: " << topic << endl
 		  << "Group: " << group << endl;
 }

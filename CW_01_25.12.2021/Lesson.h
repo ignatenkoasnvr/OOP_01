@@ -1,6 +1,7 @@
 #pragma once
 #include "Date.h"
-#define SIZE 100;
+#include <cstring>
+const int SIZE = 100;
 
 class Lesson
 {
@@ -10,14 +11,14 @@ private: //
 	char group[SIZE];
 
 public: // 
-	Lesson(char topic[], char group[]);
-	Lesson(Date date, char topic[], char group[]);
+	Lesson(const char *topic, const char *group);
+	Lesson(Date date, const char * topic, const char *group);
 
 	Date getDate() { return date; }	
 	void setDate(Date date) { this->date = date; }
 
-	//char getTopic() { return topic[]; }	
-	//void setTopic(char topic) { this->topic[] = topic[]; }
+	char *getTopic() { return topic; }	
+	void setTopic(const char* topic) { strcpy_s(this->topic, SIZE, topic); }
 
 	//char getGroup() { return group[]; }	
 	//void setGroup(char group) { this->group[SIZE] = group; }
